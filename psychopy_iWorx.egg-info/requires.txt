@@ -1,0 +1,11 @@
+psychopy
+
+[docs]
+psychopy
+psychopy-sphinx-theme
+sphinx
+furo
+
+[tests]
+psychopy
+pytest

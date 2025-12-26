@@ -2,7 +2,7 @@
 # the name of your plugin (required)
 name = "psychopy-iWorx"
 # the current version of the plugin (required)
-version = "0.0.1" 
+version = "0.0.4" 
 # a brief description of what your plugin does
 description = "Send a TCP message to LabScribe to mark events in PsychoPy."
 # link to the README.md file for a longer description of the project
@@ -37,7 +37,7 @@ tests = [
 [project.entry-points."psychopy.experiment.components"]
 # This maps the Builder name to your Python class. 
 # Format: NameInBuilder = "package.subfolder.file:ClassName"
-MessageLabScribe = "psychopy_iWorx.components.message_labscribe:MessageLabScribeComponent"
+MessageLabScribe = "psychopy_iWorx.components.MessageLabScribeComponent:MessageLabScribeComponent"
 
 [project.entry-points."psychopy.hardware"]
 # Allows users to import your device logic in Coder via 'from psychopy.hardware import iWorx'

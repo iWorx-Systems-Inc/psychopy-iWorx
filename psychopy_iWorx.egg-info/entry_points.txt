@@ -1,0 +1,8 @@
+[psychopy.app.themes.icons]
+MessageLabScribe = psychopy_iWorx.icons
+
+[psychopy.experiment.components]
+MessageLabScribe = psychopy_iWorx.components.MessageLabScribeComponent:MessageLabScribeComponent
+
+[psychopy.hardware]
+iWorx = psychopy_iWorx.hardware.labscribe_device:LabScribeDevice

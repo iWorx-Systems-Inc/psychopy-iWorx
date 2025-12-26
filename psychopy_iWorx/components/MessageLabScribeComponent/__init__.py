@@ -3,20 +3,24 @@ from psychopy.constants import (NOT_STARTED, STARTED, FINISHED)
 from pathlib import Path
 
 # Path for the icon shown in the Builder toolbar
-iconFile = Path(__file__).parent / 'MessageLabScribe.png'
+# Get the directory where THIS __init__.py is located
+thisFolder = Path(__file__).parent.absolute()
+
+# Define the icon file path
+iconFile = str(thisFolder / 'MessageLabScribe.png')
 
 class MessageLabScribeComponent(BaseComponent):
     """
     A Builder component to send TCP strings to LabScribe (iWorx) software.
     """
     categories = ['Hardware']
-    targets = ['PyGame', 'Pyglet']
+    targets = ['PsychoPy', 'PyGame', 'Pyglet']
     
     def __init__(self, exp, parentName, name='labScribe', 
                  address='127.0.0.1', port=3000, message='TRIGGER_1', 
-                 startTime=0.0):
+                 startEstim=0.0):
         super(MessageLabScribeComponent, self).__init__(
-            exp, parentName, name, startTime=startTime)
+            exp, parentName, name, startEstim=startEstim)
         
         self.type = 'MessageLabScribe'
         self.url = "https://iworx.com/support/labscribe-manual/"
