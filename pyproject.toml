@@ -1,0 +1,55 @@
+[project]
+# the name of your plugin (required)
+name = "psychopy-iWorx"
+# the current version of the plugin (required)
+version = "0.0.1" 
+# a brief description of what your plugin does
+description = "Send a TCP message to LabScribe to mark events in PsychoPy."
+# link to the README.md file for a longer description of the project
+readme = "README.md"
+# contact information for yourself and anyone else who worked on the plugin 
+authors = [
+  { name = "iWorx Systems Inc", email = "info@iworx.com" },
+]
+# a license tells other people how to use your code and protects you from stealing
+license = { text = "MIT" }
+# add any packages which your plugin needs in order to run
+dependencies = [
+    "psychopy",
+]
+
+[project.urls]
+homepage = "https://github.com/psychopy/psychopy-iWorx"
+changelog = "https://github.com/psychopy/psychopy-iWorx/blob/main/CHANGELOG.md"
+
+[project.optional-dependencies]
+docs = [
+  "psychopy",
+  "psychopy-sphinx-theme",
+  "sphinx",
+  "furo",
+]
+tests = [
+  "psychopy",
+  "pytest",
+]
+
+[project.entry-points."psychopy.experiment.components"]
+# This maps the Builder name to your Python class. 
+# Format: NameInBuilder = "package.subfolder.file:ClassName"
+MessageLabScribe = "psychopy_iWorx.components.message_labscribe:MessageLabScribeComponent"
+
+[project.entry-points."psychopy.hardware"]
+# Allows users to import your device logic in Coder via 'from psychopy.hardware import iWorx'
+iWorx = "psychopy_iWorx.hardware.labscribe_device:LabScribeDevice"
+
+[project.entry-points."psychopy.app.themes.icons"]
+# Tells PsychoPy where to look for the 'MessageLabScribe.png' icon
+MessageLabScribe = "psychopy_iWorx.icons"
+
+[tool.setuptools.package-data]
+# Essential to include the PNG icon and any protocol files in the final install
+"*" = ["*.png", "*.ico", "*.yaml"] 
+
+[tool.setuptools.packages.find]
+exclude = ["docs*", "docs_src*", "tests*"]
