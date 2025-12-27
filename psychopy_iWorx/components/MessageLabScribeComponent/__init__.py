@@ -23,6 +23,7 @@ class MessageLabScribeComponent(BaseComponent):
             exp, parentName, name, startEstim=startEstim)
         
         self.type = 'MessageLabScribe'
+        self.iconFile = iconFile  # Explicitly link the icon to the class
         self.url = "https://iworx.com/support/labscribe-manual/"
 
         # --- Parameters for the Builder Dialog Box ---

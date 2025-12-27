@@ -1,6 +1,6 @@
 Metadata-Version: 2.4
 Name: psychopy-iWorx
-Version: 0.0.3
+Version: 0.0.4
 Summary: Send a TCP message to LabScribe to mark events in PsychoPy.
 Author-email: iWorx Systems Inc <info@iworx.com>
 License: MIT
