@@ -43,10 +43,6 @@ MessageLabScribe = "psychopy_iWorx.components.MessageLabScribeComponent:MessageL
 # Allows users to import your device logic in Coder via 'from psychopy.hardware import iWorx'
 iWorx = "psychopy_iWorx.hardware.labscribe_device:LabScribeDevice"
 
-[project.entry-points."psychopy.app.themes.icons"]
-# Tells PsychoPy where to look for the 'MessageLabScribe.png' icon
-MessageLabScribe = "psychopy_iWorx.icons"
-
 [tool.setuptools.package-data]
 # Essential to include the PNG icon and any protocol files in the final install
 "*" = ["*.png", "*.ico", "*.yaml"] 

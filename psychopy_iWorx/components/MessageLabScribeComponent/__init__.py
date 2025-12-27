@@ -1,5 +1,6 @@
 from psychopy.experiment.components import BaseComponent, Param
 from psychopy.constants import (NOT_STARTED, STARTED, FINISHED)
+import os
 from pathlib import Path
 
 # Path for the icon shown in the Builder toolbar
@@ -20,7 +21,7 @@ class MessageLabScribeComponent(BaseComponent):
                  address='127.0.0.1', port=3000, message='TRIGGER_1', 
                  startEstim=0.0):
         super(MessageLabScribeComponent, self).__init__(
-            exp, parentName, name, startEstim=startEstim)
+            exp, parentName, name, startEstim=startEstim )
         
         self.type = 'MessageLabScribe'
         self.iconFile = iconFile  # Explicitly link the icon to the class
