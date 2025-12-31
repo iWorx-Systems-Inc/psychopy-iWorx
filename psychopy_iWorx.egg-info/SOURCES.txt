@@ -7,17 +7,6 @@ psychopy_iWorx.egg-info/dependency_links.txt
 psychopy_iWorx.egg-info/entry_points.txt
 psychopy_iWorx.egg-info/requires.txt
 psychopy_iWorx.egg-info/top_level.txt
-psychopy_iWorx/app/ribbon.py
 psychopy_iWorx/components/__init__.py
 psychopy_iWorx/components/MessageLabScribeComponent/MessageLabScribe.png
 psychopy_iWorx/components/MessageLabScribeComponent/__init__.py
-psychopy_iWorx/hardware/__init__.py
-psychopy_iWorx/hardware/exampleDevice.py
-psychopy_iWorx/hardware/exampleResponseDevice.py
-psychopy_iWorx/icons/MessageLabScribe.png
-psychopy_iWorx/icons/__init__.py
-psychopy_iWorx/routines/__init__.py
-psychopy_iWorx/routines/exampleStandaloneRoutine/__init__.py
-psychopy_iWorx/visual/__init__.py
-psychopy_iWorx/visual/exampleVisualStim.py
-tests/test_entry_points.py

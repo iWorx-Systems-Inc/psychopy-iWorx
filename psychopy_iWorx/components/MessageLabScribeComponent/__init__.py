@@ -8,14 +8,15 @@ from pathlib import Path
 thisFolder = Path(__file__).parent.absolute()
 
 # Define the icon file path
-iconFile = str(thisFolder / 'MessageLabScribe.png')
+iconFile = Path(__file__).parent / 'MessageLabScribe.png'
 
 class MessageLabScribeComponent(BaseComponent):
     """
     A Builder component to send TCP strings to LabScribe (iWorx) software.
     """
-    categories = ['Hardware']
-    targets = ['PsychoPy', 'PyGame', 'Pyglet']
+    categories = ['iWorx']
+    targets = ['PsychoPy']
+    iconFile = Path(__file__).parent / 'MessageLabScribe.png'
     
     def __init__(self, exp, parentName, name='labScribe', 
                  address='127.0.0.1', port=3000, message='TRIGGER_1', 
@@ -25,6 +26,7 @@ class MessageLabScribeComponent(BaseComponent):
         
         self.type = 'MessageLabScribe'
         self.iconFile = iconFile  # Explicitly link the icon to the class
+        print(f"Iconfile, {iconFile}")
         self.url = "https://iworx.com/support/labscribe-manual/"
 
         # --- Parameters for the Builder Dialog Box ---
