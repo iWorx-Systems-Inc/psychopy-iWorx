@@ -7,15 +7,6 @@ License: MIT
 Project-URL: homepage, https://github.com/psychopy/psychopy_iWorx
 Project-URL: changelog, https://github.com/psychopy/psychopy_iWorx/blob/main/CHANGELOG.md
 Description-Content-Type: text/markdown
-Requires-Dist: psychopy
-Provides-Extra: docs
-Requires-Dist: psychopy; extra == "docs"
-Requires-Dist: psychopy-sphinx-theme; extra == "docs"
-Requires-Dist: sphinx; extra == "docs"
-Requires-Dist: furo; extra == "docs"
-Provides-Extra: tests
-Requires-Dist: psychopy; extra == "tests"
-Requires-Dist: pytest; extra == "tests"
 
 
 The purpose of this repo is to give prospective plugin creators a starting point in the form of a minimal, working plugin to copy and edit rather than having to start from scratch.

@@ -5,7 +5,6 @@ psychopy_iWorx.egg-info/PKG-INFO
 psychopy_iWorx.egg-info/SOURCES.txt
 psychopy_iWorx.egg-info/dependency_links.txt
 psychopy_iWorx.egg-info/entry_points.txt
-psychopy_iWorx.egg-info/requires.txt
 psychopy_iWorx.egg-info/top_level.txt
 psychopy_iWorx/components/__init__.py
 psychopy_iWorx/components/MessageLabScribeComponent/MessageLabScribe.png

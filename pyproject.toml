@@ -14,25 +14,12 @@ authors = [
 # a license tells other people how to use your code and protects you from stealing
 license = { text = "MIT" }
 # add any packages which your plugin needs in order to run
-dependencies = [
-    "psychopy",
-]
+
 
 [project.urls]
 homepage = "https://github.com/psychopy/psychopy_iWorx"
 changelog = "https://github.com/psychopy/psychopy_iWorx/blob/main/CHANGELOG.md"
 
-[project.optional-dependencies]
-docs = [
-  "psychopy",
-  "psychopy-sphinx-theme",
-  "sphinx",
-  "furo",
-]
-tests = [
-  "psychopy",
-  "pytest",
-]
 
 [project.entry-points."psychopy.experiment.components"]
 # This maps the Builder name to your Python class. 
